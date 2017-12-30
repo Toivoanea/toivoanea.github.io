@@ -396,7 +396,7 @@ $(window).load(function() {
 <div class='Character'>JAMES</div>
 <div class='Paren'>(choosy)</div>
 <div class='Dialog'>Hmm... just this building over there.</div>
-<div class='Action'>He said while picking a childhood house. He points at the house on the other street.</div>
+<div class='Action'>He said while thinking about where he lived. He points at the house on the other street.</div>
 <div class='Slugline'>INT. HALLWAY</div>
 <div class='Action'>Mindis and James walk towards a door.</div>
 <div class='Shot'>They enter James's room. </div>
