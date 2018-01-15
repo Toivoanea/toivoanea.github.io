@@ -1,0 +1,491 @@
+<html>
+<title>Notte's Cipher</title>
+<link rel="shortcut icon" href="http://www.iconj.com/ico/9/c/9c2q7a5wsx.ico" type="image/x-icon" />
+<link rel="icon" href="http://www.iconj.com/ico/9/c/9c2q7a5wsx.ico" type="image/x-icon">
+<body background="http://toivoanea.github.io/Background.jpg">
+<style>
+@font-face {
+     font-family: "Courier Prime";
+     src: url("https://writerduet.com/font/Courier_Prime.ttf");
+    }
+    @font-face {
+     font-family: "Courier Prime";
+     src: url("https://writerduet.com/font/Courier_Prime_Italic.ttf");
+     font-style: italic;
+    }
+    @font-face {
+     font-family: "Courier Prime";
+     src: url("https://writerduet.com/font/Courier_Prime_Bold.ttf");
+     font-weight: bold;
+    }
+    @font-face {
+     font-family: "Courier Prime";
+     src: url("https://writerduet.com/font/Courier_Prime_Bold_Italic.ttf");
+     font-style: italic;
+     font-weight: bold; }
+@media screen and (max-width: 615px) {
+    #script {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+body {
+	background-color: #eeeeee;
+        color: #424242; margin-left: auto;
+        margin-left:25%;
+	    margin-right:25%;
+	    margin-top:13%;
+        font-size: 14pt;
+        line-height: 14pt;
+        font-family: "Courier Prime", "Courier New", monospace;
+        word-wrap: break-word;
+	}		 
+input[type=text], select {
+    width: 85%;
+    padding: 8px 21px;
+    border: 1px solid #ccc;
+	font-family: "Courier Prime";
+    font-size: 14pt;
+}
+input[type=submit] {
+    width: 11%;
+    background-color: #555;
+    color: #eee;
+    padding: 8px 10px;
+    margin: 4px 0;
+    border: 1px solid #666;
+    cursor: pointer;
+	font-family: "Courier Prime";
+    font-size: 14pt;
+}
+input[type=submit]:hover {
+    background-color: #444;
+}
+a {
+	color: #424242;
+	text-decoration: none;
+}
+a:hover {
+	font-weight: bold;
+}
+	
+	::-moz-selection { background: yellow; }
+    ::selection { background: yellow; }
+</style>
+<body>
+<a href="https://toivoanea.github.io">Back to main page</a>
+<h1>Notte's Cipher</h1>
+<p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z _</p>
+<p>N O P Q R S T U V W X Y Z _ A B C D E F G H I J K L M</p>
+<input type="text" id="decryptField" value=pdrnfad>
+<input type="submit" onclick="decrypt()" value="Decrypt">
+<p id=resultD>> creator</p>
+<input type="text" id="encryptField" value=creator>
+<input type="submit" onclick="encrypt()" value="Encrypt">
+<p id=resultE>> pdrnfad</p>
+
+<script>
+document.onkeydown = function (w) {
+  w = w || window.event;
+  switch (w.which || w.keyCode) {
+        case 13 : enter();
+            break;
+  }
+}
+function enter() {
+	encrypt();
+	decrypt();
+}
+
+var l = 6;
+var letter;
+var nextL
+var rawE = "";
+var rawD = "";
+var resE = "";
+var resD = "";
+var lastL = "N";
+var c;
+function encrypt() {
+	resE = "> ";
+	rawE = document.getElementById("encryptField").value;
+	
+	l = rawE.length;
+	for (c = 0; c < l; c++) {
+		letter = rawE.charAt(c);
+		if (letter == '') {
+			nextL = ""
+		}
+		else {
+			letterConversionEncryption();
+		}
+		resE = resE + nextL;
+	}
+    document.getElementById("resultE").innerHTML = resE;
+}
+function decrypt() {
+	resD = "> ";
+	rawD = document.getElementById("decryptField").value;
+	
+	l = rawD.length;
+	for (c = 0; c < l; c++) {
+		letter = rawD.charAt(c);
+		if (letter == '') {
+			nextL = ""
+		}
+		else {
+			letterConversionDecryption();
+		}
+		resD = resD + nextL;
+	}
+	document.getElementById("resultD").innerHTML = resD;
+}
+function letterConversionEncryption() {
+	nextL = letter;
+	switch(letter) {
+		case "A":
+			nextL = "N";
+        break;
+		case "B":
+			nextL = "O";
+        break;
+		case "C":
+			nextL = "P";
+        break;
+		case "D":
+			nextL = "Q";
+        break;
+		case "E":
+			nextL = "R";
+        break;
+		case "F":
+			nextL = "S";
+        break;
+		case "G":
+			nextL = "T";
+        break;
+		case "H":
+			nextL = "U";
+        break;
+		case "I":
+			nextL = "V";
+        break;
+		case "J":
+			nextL = "W";
+        break;
+		case "K":
+			nextL = "X";
+        break;
+		case "L":
+			nextL = "Y";
+        break;
+		case "M":
+			nextL = "Z";
+        break;
+		case "N":
+			nextL = "_";
+        break;
+		case "O":
+			nextL = "A";
+        break;
+		case "P":
+			nextL = "B";
+        break;
+		case "Q":
+			nextL = "C";
+        break;
+		case "R":
+			nextL = "D";
+        break;
+		case "S":
+			nextL = "E";
+        break;
+		case "T":
+			nextL = "F";
+        break;
+		case "U":
+			nextL = "G";
+        break;
+		case "V":
+			nextL = "H";
+        break;
+		case "W":
+			nextL = "I";
+        break;
+		case "X":
+			nextL = "J";
+        break;
+		case "Y":
+			nextL = "K";
+        break;
+		case "Z":
+			nextL = "L";
+        break;
+		case "_":
+			if (lastL == lastL.toLowerCase()) {
+				nextL = "m";
+			}
+			else {
+				nextL = "M";
+			}
+        break;
+		case "a":
+			nextL = "n";
+        break;
+		case "b":
+			nextL = "b";
+        break;
+		case "c":
+			nextL = "p";
+        break;
+		case "d":
+			nextL = "q";
+        break;
+		case "e":
+			nextL = "r";
+        break;
+		case "f":
+			nextL = "s";
+        break;
+		case "g":
+			nextL = "t";
+        break;
+		case "h":
+			nextL = "u";
+        break;
+		case "i":
+			nextL = "v";
+        break;
+		case "j":
+			nextL = "w";
+        break;
+		case "k":
+			nextL = "x";
+        break;
+		case "l":
+			nextL = "y";
+        break;
+		case "m":
+			nextL = "z";
+        break;
+		case "n":
+			nextL = "_";
+        break;
+		case "o":
+			nextL = "a";
+        break;
+		case "p":
+			nextL = "b";
+        break;
+		case "q":
+			nextL = "c";
+        break;
+		case "r":
+			nextL = "d";
+        break;
+		case "s":
+			nextL = "e";
+        break;
+		case "t":
+			nextL = "f";
+        break;
+		case "u":
+			nextL = "g";
+        break;
+		case "v":
+			nextL = "h";
+        break;
+		case "w":
+			nextL = "i";
+        break;
+		case "x":
+			nextL = "j";
+        break;
+		case "y":
+			nextL = "k";
+        break;
+		case "z":
+			nextL = "l";
+        break;
+		default:
+	}
+	if (nextL != "_" && nextL != " ") {
+		lastL = nextL;
+	}
+}
+function letterConversionDecryption() {
+	nextL = letter;
+	switch(letter) {
+		case "A":
+			nextL = "O";
+        break;
+		case "B":
+			nextL = "P";
+        break;
+		case "C":
+			nextL = "Q";
+        break;
+		case "D":
+			nextL = "R";
+        break;
+		case "E":
+			nextL = "S";
+        break;
+		case "F":
+			nextL = "T";
+        break;
+		case "G":
+			nextL = "U";
+        break;
+		case "H":
+			nextL = "V";
+        break;
+		case "I":
+			nextL = "W";
+        break;
+		case "J":
+			nextL = "X";
+        break;
+		case "K":
+			nextL = "Y";
+        break;
+		case "L":
+			nextL = "Z";
+        break;
+		case "M":
+			nextL = "_";
+        break;
+		case "N":
+			nextL = "A";
+        break;
+		case "O":
+			nextL = "B";
+        break;
+		case "P":
+			nextL = "C";
+        break;
+		case "Q":
+			nextL = "D";
+        break;
+		case "R":
+			nextL = "E";
+        break;
+		case "S":
+			nextL = "F";
+        break;
+		case "T":
+			nextL = "G";
+        break;
+		case "U":
+			nextL = "H";
+        break;
+		case "V":
+			nextL = "I";
+        break;
+		case "W":
+			nextL = "J";
+        break;
+		case "X":
+			nextL = "K";
+        break;
+		case "Y":
+			nextL = "L";
+        break;
+		case "Z":
+			nextL = "M";
+        break;
+		case "_":
+			if (lastL == lastL.toLowerCase()) {
+				nextL = "n";
+			}
+			else {
+				nextL = "N";
+			}
+        break;
+		case "a":
+			nextL = "o";
+        break;
+		case "b":
+			nextL = "p";
+        break;
+		case "c":
+			nextL = "q";
+        break;
+		case "d":
+			nextL = "r";
+        break;
+		case "e":
+			nextL = "s";
+        break;
+		case "f":
+			nextL = "t";
+        break;
+		case "g":
+			nextL = "u";
+        break;
+		case "h":
+			nextL = "v";
+        break;
+		case "i":
+			nextL = "w";
+        break;
+		case "j":
+			nextL = "x";
+        break;
+		case "k":
+			nextL = "y";
+        break;
+		case "l":
+			nextL = "z";
+        break;
+		case "m":
+			nextL = "_";
+        break;
+		case "n":
+			nextL = "a";
+        break;
+		case "o":
+			nextL = "b";
+        break;
+		case "p":
+			nextL = "c";
+        break;
+		case "q":
+			nextL = "d";
+        break;
+		case "r":
+			nextL = "e";
+        break;
+		case "s":
+			nextL = "f";
+        break;
+		case "t":
+			nextL = "g";
+        break;
+		case "u":
+			nextL = "h";
+        break;
+		case "v":
+			nextL = "i";
+        break;
+		case "w":
+			nextL = "j";
+        break;
+		case "x":
+			nextL = "k";
+        break;
+		case "y":
+			nextL = "l";
+        break;
+		case "z":
+			nextL = "m";
+        break;
+		default:
+	}
+	if (nextL != "_" && nextL != " ") {
+		lastL = nextL;
+	}
+}
+</script>
+</body>
+</html>
