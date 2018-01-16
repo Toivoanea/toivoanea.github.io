@@ -39,7 +39,28 @@ body {
         line-height: 14pt;
         font-family: "Courier Prime", "Courier New", monospace;
         word-wrap: break-word;
-	}		 
+}	
+input[type=number], select {
+    width: 100px;
+    padding: 8px 0px;
+    border: 1px solid #ccc;
+	font-family: "Courier Prime";
+    font-size: 14pt;
+}
+input[type=submit] {
+    width: 110px;
+    background-color: #555;
+    color: #eee;
+    padding: 8px 10px;
+    margin: 4px 0;
+    border: 1px solid #666;
+    cursor: pointer;
+    font-family: "Courier Prime";
+    font-size: 14pt;
+}
+input[type=submit]:hover {
+    background-color: #444;
+}	
 a {
 	color: #424242;
 	text-decoration: none;
@@ -55,10 +76,11 @@ a:hover {
 <a href="https://toivoanea.github.io">Back to main page</a>
 <h1>Generate Random Words</h1>
 <p>Define the minimum and maximum word length<p>
-<input type="number" id="miniL" value=4>
-<input type="number" id="maxiL" value=9>
-<input id="preciseN" type="checkbox" onclick="precN()" span title="Use a precise word-length">
-<button onclick="gen()">Generate</button>
+<input type="number" id="miniL" value=4 style="text-align: right">
+<input type="number" id="maxiL" value=9 style="text-align: right">
+<input id="preciseN" type="submit" onclick="precN()" value="Lock" span title="Use a precise word-length" style="
+    width: 95px;">
+<input type="submit" onclick="gen()" value="Generate">
 
 <p id="word1" class="word1" style="font-weight:bold;"></p>
 <p style="opacity: 0.9;" id="word2"></p>
@@ -165,12 +187,15 @@ function filter() {
 	}
 }
 function precN() {
-	preciseNum = document.getElementById("preciseN").checked;
 	if (preciseNum == true) {
-		document.getElementById("maxiL").disabled = true;
+		document.getElementById("maxiL").disabled = false;
+		document.getElementById("preciseN").value = "Lock";
+		preciseNum = false;
 	}
 	else {
-		document.getElementById("maxiL").disabled = false;
+		document.getElementById("maxiL").disabled = true;
+		document.getElementById("preciseN").value = "Unlock";
+		preciseNum = true;
 	}
 }
 var a = 32;
