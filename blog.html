@@ -26,48 +26,53 @@
      font-style: italic;
      font-weight: bold; }
 	 
-     body {
+	body {
 		background-color: #eeeeee;
-           	color: #424242; margin-left: auto;
+           	color: #424242;
            	margin-left:25%;
 	     	margin-right:25%;
 	     	margin-top:2%;
-            font-size: 14pt;
-            line-height: 14pt;
-            font-family: "Courier Prime", "Courier New", monospace;
-            word-wrap: break-word;
-	}		 
-    a {
+             	font-size: 14pt;
+             	line-height: 14pt;
+             	font-family: "Courier Prime", "Courier New", monospace;
+             	word-wrap: break-word;
+	}		
+    	a {
 		color: #424242;
 		text-decoration: none;
 	}
-    a:hover {
+    	a:hover {
 		font-weight: bold;
 	}
 	
+	.navbar {
+		border-top: 1px solid #aaaaaa;
+		background-image: url("http://toivoanea.github.io/Background.jpg");
+		overflow: hidden;
+		position: fixed;
+		bottom: 0;
+		width: 50%;
+		float: left;
+		padding: 4px 8px;
+	}
+	
 	::-moz-selection { background: yellow; }
-    ::selection { background: yellow; }
+    	::selection { background: yellow; }
 	
 	@media all and (orientation:portrait) {
-        body {
-		font-size: 18pt;
-        color: #424242; margin-left: auto;
-        margin-left:4%;
-	    margin-right:4%;
-        }
-    }
-	
-.navbar {
-	border-top: 1px solid #aaaaaa;
-	background-image: url("http://toivoanea.github.io/Background.jpg");
-	overflow: hidden;
-	position: fixed;
-	bottom: 0;
-	width: 50%;
-	
-    float: left;
-    padding: 4px 8px;
-}
+        	body {
+			font-size: 1.6em;
+			line-height: 1em;
+           		color: #424242; 
+           		margin-left:4%;
+		     	margin-right:4%;
+	     		margin-top:5%;
+      	  	}
+		.navbar {
+			width: 96%;
+			font-size: 1.6em;
+		}
+    	}
 
 .Action, .Text, .Act, .Slugline { margin-top: 1em; max-width: 615px; width: 100%; }
 .Act { text-align: center; text-decoration: underline; text-transform: uppercase;}
