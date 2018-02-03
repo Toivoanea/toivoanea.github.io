@@ -23,21 +23,33 @@
      src: url("https://writerduet.com/font/Courier_Prime_Bold_Italic.ttf");
      font-style: italic;
      font-weight: bold; }
-@media screen and (max-width: 615px) {
-    #script {
-        margin-left: 0;
-    }
-}
 body {
 	background-color: #eeeeee;
-        color: #424242; margin-left: auto;
+        color: #424242;
         margin-left:25%;
 	margin-top:13%;
         font-size: 14pt;
         line-height: 14pt;
         font-family: "Courier Prime", "Courier New", monospace;
         word-wrap: break-word;
-	}		 
+	}	
+.navbar {
+		border-top: 1px solid #aaaaaa;
+		background-image: url("http://toivoanea.github.io/Background.jpg");
+		overflow: hidden;
+		position: fixed;
+		bottom: 0;
+		width: 50%;
+		float: left;
+		padding: 4px 8px;
+}
+@media all and (orientation:portrait) {
+    body {
+	margin-left:4%;
+	margin-right:4%;
+	margin-top:5%;
+    }
+}
 input[type=text], select {
     width: 600px;
     padding: 8px 21px;
@@ -68,7 +80,7 @@ a:hover {
 }
 	
 	::-moz-selection { background: yellow; }
-    ::selection { background: yellow; }
+    	::selection { background: yellow; }
 </style>
 <body>
 <a href="https://toivoanea.github.io">Back to main page</a>
@@ -81,6 +93,13 @@ a:hover {
 <input type="text" id="encryptField" value=creator>
 <input type="submit" onclick="encrypt()" value="Encrypt">
 <p id=resultE>> pdrnfad</p>
+	
+<div class="navbar">
+  <a href="https://www.youtube.com/channel/UCSjl6d5etSEtKLEl2f16jww"><img src="https://toivoanea.github.io/yt.png"> Youtube</a>
+  <a href="https://vimeo.com/toivoa"><img src="https://toivoanea.github.io/vimeo.png"> Vimeo</a>
+  <a href="https://twitter.com/toivoanea"><img src="https://toivoanea.github.io/twitter.png"> Twitter</a>
+  <a href="https://toivoanea.github.io/blog.html"><img src="https://toivoanea.github.io/blog.png"> Changes</a>
+</div>
 
 <script>
 document.onkeydown = function (w) {
