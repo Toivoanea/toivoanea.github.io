@@ -88,14 +88,14 @@ a:hover {
 </style>
 <body>
 <h1>Notte's Cipher</h1>
-<p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z _</p>
-<p>N O P Q R S T U V W X Y Z _ A B C D E F G H I J K L M</p>
-<input type="text" id="decryptField" placeholder="pdrnfad">
+<p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+<p>N O P Q R S T U V W X Y Z A B C D E F G H I J K L M</p>
+<input type="text" id="decryptField" placeholder="decode">
 <input type="submit" onclick="decrypt()" value="Decrypt">
-<p id=resultD>> creator</p>
-<input type="text" id="encryptField" placeholder="creator">
+<p id=resultD>> res1</p>
+<input type="text" id="encryptField" placeholder="encode">
 <input type="submit" onclick="encrypt()" value="Encrypt">
-<p id=resultE>> pdrnfad</p>
+<p id=resultE>> res2</p>
 	
 <div class="navbar">
   <a href="https://www.youtube.com/channel/UCSjl6d5etSEtKLEl2f16jww"><img src="https://toivoanea.github.io/yt.png"> Youtube</a>
@@ -204,51 +204,43 @@ function letterConversionEncryption() {
 			nextL = "Z";
         break;
 		case "N":
-			nextL = "_";
-        break;
-		case "O":
 			nextL = "A";
         break;
-		case "P":
+		case "O":
 			nextL = "B";
         break;
-		case "Q":
+		case "P":
 			nextL = "C";
         break;
-		case "R":
+		case "Q":
 			nextL = "D";
         break;
-		case "S":
+		case "R":
 			nextL = "E";
         break;
-		case "T":
+		case "S":
 			nextL = "F";
         break;
-		case "U":
+		case "T":
 			nextL = "G";
         break;
-		case "V":
+		case "U":
 			nextL = "H";
         break;
-		case "W":
+		case "V":
 			nextL = "I";
         break;
-		case "X":
+		case "W":
 			nextL = "J";
         break;
-		case "Y":
+		case "X":
 			nextL = "K";
         break;
-		case "Z":
+		case "Y":
 			nextL = "L";
         break;
-		case "_":
-			if (lastL == lastL.toLowerCase()) {
-				nextL = "m";
-			}
-			else {
-				nextL = "M";
-			}
+		case "Z":
+			nextL = "M";
         break;
 		case "a":
 			nextL = "n";
@@ -288,179 +280,6 @@ function letterConversionEncryption() {
         break;
 		case "m":
 			nextL = "z";
-        break;
-		case "n":
-			nextL = "_";
-        break;
-		case "o":
-			nextL = "a";
-        break;
-		case "p":
-			nextL = "b";
-        break;
-		case "q":
-			nextL = "c";
-        break;
-		case "r":
-			nextL = "d";
-        break;
-		case "s":
-			nextL = "e";
-        break;
-		case "t":
-			nextL = "f";
-        break;
-		case "u":
-			nextL = "g";
-        break;
-		case "v":
-			nextL = "h";
-        break;
-		case "w":
-			nextL = "i";
-        break;
-		case "x":
-			nextL = "j";
-        break;
-		case "y":
-			nextL = "k";
-        break;
-		case "z":
-			nextL = "l";
-        break;
-		default:
-	}
-	if (nextL != "_" && nextL != " ") {
-		lastL = nextL;
-	}
-}
-function letterConversionDecryption() {
-	nextL = letter;
-	switch(letter) {
-		case "A":
-			nextL = "O";
-        break;
-		case "B":
-			nextL = "P";
-        break;
-		case "C":
-			nextL = "Q";
-        break;
-		case "D":
-			nextL = "R";
-        break;
-		case "E":
-			nextL = "S";
-        break;
-		case "F":
-			nextL = "T";
-        break;
-		case "G":
-			nextL = "U";
-        break;
-		case "H":
-			nextL = "V";
-        break;
-		case "I":
-			nextL = "W";
-        break;
-		case "J":
-			nextL = "X";
-        break;
-		case "K":
-			nextL = "Y";
-        break;
-		case "L":
-			nextL = "Z";
-        break;
-		case "M":
-			nextL = "_";
-        break;
-		case "N":
-			nextL = "A";
-        break;
-		case "O":
-			nextL = "B";
-        break;
-		case "P":
-			nextL = "C";
-        break;
-		case "Q":
-			nextL = "D";
-        break;
-		case "R":
-			nextL = "E";
-        break;
-		case "S":
-			nextL = "F";
-        break;
-		case "T":
-			nextL = "G";
-        break;
-		case "U":
-			nextL = "H";
-        break;
-		case "V":
-			nextL = "I";
-        break;
-		case "W":
-			nextL = "J";
-        break;
-		case "X":
-			nextL = "K";
-        break;
-		case "Y":
-			nextL = "L";
-        break;
-		case "Z":
-			nextL = "M";
-        break;
-		case "_":
-			if (lastL == lastL.toLowerCase()) {
-				nextL = "n";
-			}
-			else {
-				nextL = "N";
-			}
-        break;
-		case "a":
-			nextL = "o";
-        break;
-		case "b":
-			nextL = "p";
-        break;
-		case "c":
-			nextL = "q";
-        break;
-		case "d":
-			nextL = "r";
-        break;
-		case "e":
-			nextL = "s";
-        break;
-		case "f":
-			nextL = "t";
-        break;
-		case "g":
-			nextL = "u";
-        break;
-		case "h":
-			nextL = "v";
-        break;
-		case "i":
-			nextL = "w";
-        break;
-		case "j":
-			nextL = "x";
-        break;
-		case "k":
-			nextL = "y";
-        break;
-		case "l":
-			nextL = "z";
-        break;
-		case "m":
-			nextL = "_";
         break;
 		case "n":
 			nextL = "a";
@@ -503,8 +322,167 @@ function letterConversionDecryption() {
         break;
 		default:
 	}
-	if (nextL != "_" && nextL != " ") {
-		lastL = nextL;
+}
+function letterConversionDecryption() {
+	nextL = letter;
+	switch(letter) {
+		case "A":
+			nextL = "O";
+        break;
+		case "B":
+			nextL = "P";
+        break;
+		case "C":
+			nextL = "Q";
+        break;
+		case "D":
+			nextL = "R";
+        break;
+		case "E":
+			nextL = "S";
+        break;
+		case "F":
+			nextL = "T";
+        break;
+		case "G":
+			nextL = "U";
+        break;
+		case "H":
+			nextL = "V";
+        break;
+		case "I":
+			nextL = "W";
+        break;
+		case "J":
+			nextL = "X";
+        break;
+		case "K":
+			nextL = "Y";
+        break;
+		case "L":
+			nextL = "Z";
+        break;
+		case "M":
+			nextL = "A";
+        break;
+		case "N":
+			nextL = "B";
+        break;
+		case "O":
+			nextL = "C";
+        break;
+		case "P":
+			nextL = "D";
+        break;
+		case "Q":
+			nextL = "E";
+        break;
+		case "R":
+			nextL = "F";
+        break;
+		case "S":
+			nextL = "G";
+        break;
+		case "T":
+			nextL = "H";
+        break;
+		case "U":
+			nextL = "I";
+        break;
+		case "V":
+			nextL = "J";
+        break;
+		case "W":
+			nextL = "K";
+        break;
+		case "X":
+			nextL = "L";
+        break;
+		case "Y":
+			nextL = "M";
+        break;
+		case "Z":
+			nextL = "N";
+        break;
+		case "a":
+			nextL = "o";
+        break;
+		case "b":
+			nextL = "p";
+        break;
+		case "c":
+			nextL = "q";
+        break;
+		case "d":
+			nextL = "r";
+        break;
+		case "e":
+			nextL = "s";
+        break;
+		case "f":
+			nextL = "t";
+        break;
+		case "g":
+			nextL = "u";
+        break;
+		case "h":
+			nextL = "v";
+        break;
+		case "i":
+			nextL = "w";
+        break;
+		case "j":
+			nextL = "x";
+        break;
+		case "k":
+			nextL = "y";
+        break;
+		case "l":
+			nextL = "z";
+        break;
+		case "m":
+			nextL = "a";
+        break;
+		case "n":
+			nextL = "b";
+        break;
+		case "o":
+			nextL = "c";
+        break;
+		case "p":
+			nextL = "d";
+        break;
+		case "q":
+			nextL = "e";
+        break;
+		case "r":
+			nextL = "f";
+        break;
+		case "s":
+			nextL = "g";
+        break;
+		case "t":
+			nextL = "h";
+        break;
+		case "u":
+			nextL = "i";
+        break;
+		case "v":
+			nextL = "j";
+        break;
+		case "w":
+			nextL = "k";
+        break;
+		case "x":
+			nextL = "l";
+        break;
+		case "y":
+			nextL = "m";
+        break;
+		case "z":
+			nextL = "n";
+        break;
+		default:
 	}
 }
 </script>
