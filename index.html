@@ -6,45 +6,39 @@
 <link rel="icon" href="https://toivoanea.github.io/icon.ico" type="image/x-icon">
 <body background="http://toivoanea.github.io/Background.jpg">
 <style type="text/css">
-    @font-face {
-     font-family: "Courier Prime";
-     src: url("https://writerduet.com/font/Courier_Prime.ttf");
-    }
-    @font-face {
-     font-family: "Courier Prime";
-     src: url("https://writerduet.com/font/Courier_Prime_Italic.ttf");
-     font-style: italic;
-    }
-    @font-face {
-     font-family: "Courier Prime";
-     src: url("https://writerduet.com/font/Courier_Prime_Bold.ttf");
-     font-weight: bold;
-    }
-    @font-face {
-     font-family: "Courier Prime";
-     src: url("https://writerduet.com/font/Courier_Prime_Bold_Italic.ttf");
-     font-style: italic;
-     font-weight: bold; }
+    @font-face { font-family: "Courier Prime"; src: url("https://writerduet.com/font/Courier_Prime.ttf");}
+    @font-face { font-family: "Courier Prime"; src: url("https://writerduet.com/font/Courier_Prime_Italic.ttf"); font-style: italic; }
+    @font-face { font-family: "Courier Prime"; src: url("https://writerduet.com/font/Courier_Prime_Bold.ttf"); font-weight: bold; }
+    @font-face { font-family: "Courier Prime"; src: url("https://writerduet.com/font/Courier_Prime_Bold_Italic.ttf"); font-style: italic; font-weight: bold; }
 	 
 	body {
 		background-color: #eeeeee;
-           	color: #424242;
-           	margin-left:25%;
-	     	margin-right:25%;
-	     	margin-top:2%;
-             	font-size: 14pt;
-             	line-height: 14pt;
-             	font-family: "Courier Prime", "Courier New", monospace;
-             	word-wrap: break-word;
+        color: #424242;
+       	margin-left:25%;
+	    margin-right:25%;
+		font-size: 14pt;
+		line-height: 14pt;
+		font-family: "Courier Prime", "Courier New", monospace;
+        word-wrap: break-word;
 	}		
-    	a {
+    a {
 		color: #424242;
 		text-decoration: none;		
 		font-size: 14pt;
 		font-weight: normal;
 	}
-    	a:hover {
+    a:hover {
 		font-weight: bold;
+	}
+	a.title {
+		font-weight: bold;
+		font-size:1.4em;
+	}
+	div.title {
+		font-size:1.4em;
+	}
+	div.head {
+		margin-top:2%;
 	}
 	
 	#sixteennine {
@@ -56,33 +50,42 @@
 	#exile {
 		height: 41.71%;
 	}
+	hr.end {
+		margin-bottom:3%;
+	}
+	
+		
 	
 	::-moz-selection { background: yellow; }
-    	::selection { background: yellow; }
+    ::selection { background: yellow; }
 	
-	@media all and (orientation:portrait) {
-        	body {
-			font-size: 1.5em;
-			line-height: 0.6em;
-           		color: #424242; 
-           		margin-left:4%;
-		     	margin-right:4%;
-	     		margin-top:5%;
-      	  	}
-		.a {
-			font-size: 1.5em;
+	@media all and (max-aspect-ratio: 4/3) {
+        body {
+			color: #424242; 
+			margin-left:0%;
+			margin-right:0%;
+      	}
+		div.title {
+			margin-left:2.5%;
 		}
-		#sixteennine {
-			height: 50%;
+		div.head {
+			margin-left:2.5%;
 		}
-		#twobyone {
-			height: 40%;
+		
+	}
+	@media all and (max-aspect-ratio: 6/7) {
+		body {
+			font-size: 4vw;
+			line-height: 2vh;
+      	}
+		div.title, a, a.title {
+			font-size:3.3vw;
+			line-height: 3.5vh;
 		}
-		#exile {
-			height: 32%;
+		h1 {
+			font-size: 9vw;
 		}
-    	}
-
+	}
 .Action, .Text, .Act, .Slugline { margin-top: 1em; max-width: 615px; width: 100%; }
 .Act { text-align: center; text-decoration: underline; text-transform: uppercase;}
 .Slugline { margin-top: 0em; font-weight: bold; text-transform: uppercase; font-size:1.4em}
@@ -90,7 +93,7 @@
 	.Action, .Text, .Act, .Slugline {max-width: 3000px;} 
 }
 
-</style></head><body>
+</style></head><body><div class="head">
 <a title="Toivoa" href="https://www.youtube.com/channel/UCSjl6d5etSEtKLEl2f16jww"><img src="https://toivoanea.github.io/n/yt.png"></a>
 <a title="Toivoa" href="https://vimeo.com/toivoa"><img src="https://toivoanea.github.io/n/vimeo.png"></a>
 <a title="Leonspringr "href="https://www.instagram.com/lsprlighting/"><img src="https://toivoanea.github.io/n/ig.png"> </a>
@@ -102,51 +105,44 @@
 												    
 <h1 style="margin-top:6.5%">Leon Springer</h1>
 Aspiring Screenwriter and Gaffer <br></br>
-Brighton / London | 21 years old<br></br>
-</div>
+Brighton / London | 21 years old<br></br></div>
 
 <h1 style="margin-top:3%"> </h1>
-	
-<!-- New Video:
-<a style="font-size:1.4em; font-weight: bold">title</a> DD/MM/YYYY<br></br>
-	<iframe src="https://player.vimeo.com/video/270472229" width="100%" height="56.25%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>	
-	<br></br>sample text
-	<hr><br></br>
--->			
 													   
 <!-- Showreel -->
-<a style="font-size:1.4em; font-weight: bold">Leon Springer / Gaffer Showreel</a> 26/02/2020<br></br>
+<div class="title"><a class="title">Leon Springer / Gaffer Showreel</a> 26/02/2020<br></br></div>
 	<iframe id="sixteennine" src="https://player.vimeo.com/video/394055293" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>	
-	<hr><br></br>
+	<hr class="end">
 
 <!-- 440 Nanometers -->
-<a style="font-size:1.4em; font-weight: bold">440 Nanometers</a> 25/03/2020<br></br>
+<div class="title"><a class="title">440 Nanometers</a> 25/03/2020<br></br></div>
 	<iframe id="sixteennine" src="https://player.vimeo.com/video/400230818" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>	
-	<hr><br></br>
+	<hr class="end">
 													    
 <!-- Season's Reunion -->
-<a style="font-size:1.4em; font-weight: bold">Season's Reunion</a> 27/09/2019<br></br>
+<div class="title"><a class="title">Season's Reunion</a> 27/09/2019<br></br></div>
 	<iframe id="sixteennine" width="100%" src="https://www.youtube.com/embed/5UQasQ8xvgA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	<hr><br></br>													       
+	<hr class="end">												       
 														       													       
 <!-- bootPhoses -->
-<a style="font-size:1.4em; font-weight: bold">*boot("PHOSES");</a> 20/06/2019<br></br>
+<div class="title"><a class="title">*boot("PHOSES");</a> 20/06/2019<br></br></div>
 	<iframe id="twobyone" src="https://player.vimeo.com/video/343176270" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-	<hr><br></br>
+	<hr class="end">
 
 <!-- Host Recordings -->
-<a style="font-size:1.4em; font-weight: bold">Host Recordings Short Documentary</a> 07/06/2019<br></br>
+<div class="title"><a class="title">Host Recordings Short Documentary</a> 07/06/2019<br></br></div>
 	<iframe id="sixteennine" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FBrightonFilmSchool%2Fvideos%2F1181417815363335%2F&show_text=0" width="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-	<hr><br></br>
+	<hr class="end">
 
 <!-- Lago Di Garda -->
-<a style="font-size:1.4em; font-weight: bold">FSJ Abschlussseminar am Gardasee</a> 21/07/2018<br></br>
+<div class="title"><a class="title">FSJ Abschlussseminar am Gardasee</a> 21/07/2018<br></br></div>
 	<iframe id="sixteennine" src="https://player.vimeo.com/video/281063614" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>	
-	<hr><br></br>
+	<hr class="end">
 	
-<!-- Syeh's Exile --><a style="font-size:1.4em; font-weight: bold">Syeh's Exile</a> 17/05/2018<br></br>
+<!-- Syeh's Exile -->
+<div class="title"><a class="title">Syeh's Exile</a> 17/05/2018<br></br></div>
 	<iframe id="exile" src="https://player.vimeo.com/video/270472229" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>	
-	<hr><br></br>
+	<hr class="end">
 	
 </body>
 </html>
