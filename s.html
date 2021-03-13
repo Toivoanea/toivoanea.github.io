@@ -27,17 +27,27 @@ a {
 a:hover {
 	font-weight: bold;
 }
-a.boxA:hover {
-	font-weight: normal;
+a.title {
+	font-weight: bold;
+	font-size:1.4em;
 }
 div.head {
 	margin-top:3%;
 }
+a.boxA:hover, a.boxB:hover, .alignright:hover {
+	font-weight: normal;
+}
+r {
+	float: right;
+	font-weight: bold;
+}
 .divSpace { margin-left: 2%; margin-right: 2%;}
-.divA {	background-color:rgba(220,220,220,0.2); border-radius: 5px;}
-.divA:hover { background-color:rgba(210,210,210,0.4);}
-.divB {	background-color:rgba(240,240,240,0.2); border-radius: 5px;}
-	
+.divA {	background-color:rgba(190,190,190,0.2); border-radius: 7px;}
+.divA:hover { background-color:rgba(190,190,190,0.3);}
+.divB {	background-color:rgba(175,175,175,0.2); border-radius: 7px;}
+.divB:hover { background-color:rgba(175,175,175,0.3);}
+.divAU {background-color:rgba(220,220,220,0.08); border-radius: 7px;}
+.divBU {background-color:rgba(195,195,195,0.08); border-radius: 7px;}
 	
 @media all and (max-aspect-ratio: 4/3) {
 	body {
@@ -45,9 +55,6 @@ div.head {
 		margin-left:0%;
 		margin-right:0%;
       	}
-	div.title {
-		margin-left:2.5%;
-	}
 	div.head {
 		margin-left:2.5%;
 	}
@@ -57,10 +64,6 @@ div.head {
 		font-size: 4vw;
 		line-height: 2vh;
       	}
-	div.title, a, a.title {
-		font-size:3.3vw;
-		line-height: 3.5vh;
-	}
 	h1 {
 		font-size: 9vw;
 	}
@@ -76,6 +79,20 @@ div.head {
 <a style="font-weight: normal"><img src="https://toivoanea.github.io/n/blog.png"> Scripts</a>
 <a href="https://toivoanea.github.io/stills.html"><img src="https://toivoanea.github.io/n/blog.png"> Stills</a>
 <a href="https://toivoanea.github.io/about.html"><img src="https://toivoanea.github.io/n/blog.png"> About</a>
+	
+<!--
+	<!--  --<a class="boxA" href="link"><div class="divA"><p style="font-size:1px;visibility: hidden;">h</p><div class="divSpace"><span style="font-size:1.2em; font-weight: bold">title</span> /2020<br></br>
+  	Short Film<r>role &#8203;</r><br></br></div></div></a>
+	
+	<!--  --<a class="boxB" href="link"><div class="divB"><p style="font-size:1px;visibility: hidden;">h</p><div class="divSpace"><span style="font-size:1.2em; font-weight: bold">title</span> /2020<br></br>
+  	Short Film<r>role &#8203;</r><br></br></div></div></a>
+
+	<!--  --<div class="divAU"><p style="font-size:1px;visibility: hidden;">h</p><div class="divSpace"><span style="font-size:1.2em; font-weight: bold">title</span> /2020<br></br>
+  	Short Film<r>role &#8203;</r><br></br></div></div>
+	
+	<!--  --<div class="divBU"><p style="font-size:1px;visibility: hidden;">h</p><div class="divSpace"><span style="font-size:1.2em; font-weight: bold">title</span> /2020<br></br>
+  	Short Film<r>role &#8203;</r><br></br></div></div>
+-->			
 	
 <h1 style="margin-top:6.5%">Scripts</h1></div>
 	
@@ -122,6 +139,9 @@ div.head {
 	<!-- Infiltration --><div class="divB"><p style="font-size:3px;visibility: hidden;">h</p><div class="divSpace"><span style="font-size:1.2em; font-weight: bold">Infiltration</span> 13 pgs.<br></br>
   	The Timewriter rewrites events in time to make a friend.
 	<div style="text-align:right">26/12/2017</div></div><p style="font-size:1px;visibility: hidden;">h</p></div>
+	
+	<!-- Infiltration --><div class="divBU"><p style="font-size:1px;visibility: hidden;">h</p><div class="divSpace"><span style="font-size:1.2em; font-weight: bold">Infiltration</span> 26/12/2017<br></br>
+  	The Timewriter rewrites events in time to make a friend.<r>13pgs. &#8203;</r><br></br></div></div>
 
 <br></br>
 
