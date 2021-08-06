@@ -1,0 +1,90 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Stills - Leon Springer</title>
+<link rel="shortcut icon" href="https://toivoanea.github.io/icon.ico" type="image/x-icon" />
+<link rel="icon" href="https://toivoanea.github.io/icon.ico" type="image/x-icon">
+<body background="http://toivoanea.github.io/Background.jpg">
+<style type="text/css">
+@font-face { font-family: "Courier Prime"; src: url("https://writerduet.com/font/Courier_Prime.ttf");}
+@font-face { font-family: "Courier Prime"; src: url("https://writerduet.com/font/Courier_Prime_Bold.ttf"); font-weight: bold; }
+::-moz-selection { background: yellow; }
+::selection { background: yellow; }	 
+body {
+	background-color: #eeeeee;
+	color: #424242;
+    margin-left:25%;
+	margin-right:25%;
+	font-size: 14pt;
+	line-height: 18pt;
+	font-family: "Courier Prime", "Courier New", monospace;
+    word-wrap: break-word;
+}		
+a {
+	color: #424242;
+	text-decoration: none;
+}
+a:hover {
+	font-weight: bold;
+}
+a.bar {
+	font-size: 18pt;
+	padding:10px;
+}
+div.head {
+	margin-top:3%;
+}
+	
+@media all and (max-aspect-ratio: 4/3) {
+	body {
+		color: #424242; 
+		margin-left:0%;
+		margin-right:0%;
+      	}
+	div.head {
+		margin-left:2.5%;
+	}
+}
+@media all and (max-aspect-ratio: 6/7) {
+	body {
+		font-size: 4vw;
+		line-height: 2vh;
+      	}
+	h1 {
+		font-size: 9vw;
+	}
+}
+
+</style></head><body><div class="head">
+<a title="neonspringer" href="https://instagram.com/neonspringer/"><img src="https://toivoanea.github.io/n/ig.png"> </a>
+<a title="Leon Springer" href="https://linkedin.com/in/springerleon"><img src="https://toivoanea.github.io/n/linkedin.png"></a>
+<a title="Leon Springer" href="https://vimeo.com/toivoa"><img src="https://toivoanea.github.io/n/vimeo.png"></a>
+<a title="Leon Springer" href="https://www.youtube.com/channel/UCSjl6d5etSEtKLEl2f16jww"><img src="https://toivoanea.github.io/n/yt.png"></a>
+<a class=bar style="padding-left:25px" href="https://Leonspringer.com"> Home </a>
+<a class=bar href="https://Leonspringer.com/archive"> Credits </a>
+<a class=bar href="https://Leonspringer.com/s"> Scripts </a>
+<a class=bar href="https://Leonspringer.com/stills"> Stills </a>
+<a class=bar href="https://Leonspringer.com/about"> About </a>
+												    
+<h1 style="margin-top:6.5%">Practicals (Bulbs, Shades, Bases)</h1>
+</div>
+
+<img src="https://i.ibb.co/ZVBWW5d/PierLife.png" width="100%">Cable with ES socket</div><br><br><br><br>
+<img src="https://i.ibb.co/6F8Qgdy/Cold-Misty-Brighton.png" width="100%"></div><br><br><br><br>
+<img src="https://i.ibb.co/sjfC6Zg/Gas-Station.png" width="100%"></div><br><br><br><br>
+<img src="https://i.ibb.co/8rK0wBt/FeetFish.png" width="100%"></div><br><br><br><br>
+<img src="https://i.ibb.co/yyp4jqw/Hat-Fabric.png" width="100%"></div><br><br><br><br>
+<img src="https://i.ibb.co/8dxB2fM/Bubbles.png" width="100%"></div><br><br><br><br>
+<img src="https://i.ibb.co/Yd812QP/Hollis-Sunday.png" width="100%"></div><br><br><br><br>
+<img src="https://i.ibb.co/TwBscbm/Lavender-Flowers.png" width="100%"></div><br><br><br><br>
+<img src="https://i.ibb.co/Fz6S3z9/Preston-Park-Water.png" width="100%"></div><br><br><br><br>
+<img src="https://i.ibb.co/wBj3Ckv/Windmill.png" width="100%"></div><br><br><br><br>
+<img src="https://i.ibb.co/Tcm2wPY/Sodium-Doomsday.png" width="100%"></div><br><br><br><br>
+<img src="https://i.ibb.co/1MY8Fvm/Interlaced.png" width="100%"></div><br><br><br><br>
+<img src="https://i.ibb.co/ZgMxxph/Sodium-Fluorescent.png" width="100%"></div><br><br><br><br>
+<img src="https://i.ibb.co/Lp7SsGG/Sunset-Digging.png" width="100%"></div><br><br><br><br>
+  	
+<h1 style="margin-top:3%"> </h1>
+
+</body>
+</html>
