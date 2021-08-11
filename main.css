@@ -102,7 +102,7 @@ div.title {
 		font-size: 14pt;
 		line-height: 17pt;
       	}
-	div.head, .year, .text {
+	div.head, .year, div.text {
 		margin-left:2.5%;
 		margin-right:2.5%;
 	}
