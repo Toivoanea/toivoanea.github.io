@@ -5,12 +5,12 @@
 body {
 	background: url("http://toivoanea.github.io/Background.jpg");
 	color: #424242;
-    margin-left:25%;
+    	margin-left:25%;
 	margin-right:25%;
 	font-size: 13pt;
 	line-height: 15pt;
 	font-family: "Courier Prime", "Courier New", monospace;
-    word-wrap: break-word;
+    	word-wrap: break-word;
 }	
 div.head {
 	margin-top:3%;
@@ -78,10 +78,7 @@ b {
 	height: 50%;
 }
 #exile {
-	height: 39%; /*41.71%*/
-}
-div.title {
-	font-size: 18pt;
+	height: 35%;
 }
 
 
@@ -107,7 +104,16 @@ div.title {
 		margin-right:2.5%;
 	}
 	h1 {
-		font-size: 22pt;
+		font-size: 16pt;
+	}
+	.name, .nameLink {
+		font-size:14pt;
+	}
+	.year {
+		font-size: 14pt;
+	}
+	a.bar {
+		font-size: 14pt;
 	}
 }
 
