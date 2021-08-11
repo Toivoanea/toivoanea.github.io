@@ -91,9 +91,11 @@ div.title {
 		margin-left:0%;
 		margin-right:0%;
       	}
-	div.head {
+	div.head, .year, .text {
 		margin-left:2.5%;
+		margin-right:2.5%;
 	}
+	
 }
 @media all and (max-aspect-ratio: 6/7) {
 	body {
