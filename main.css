@@ -1,0 +1,109 @@
+﻿@font-face { font-family: "Courier Prime"; src: url("https://writerduet.com/font/Courier_Prime.ttf");}
+@font-face { font-family: "Courier Prime"; src: url("https://writerduet.com/font/Courier_Prime_Bold.ttf"); font-weight: bold; }
+::-moz-selection { background: yellow; }
+::selection { background: yellow; }	 
+body {
+	background: url("http://toivoanea.github.io/Background.jpg");
+	color: #424242;
+    margin-left:25%;
+	margin-right:25%;
+	font-size: 12pt;
+	line-height: 15pt;
+	font-family: "Courier Prime", "Courier New", monospace;
+    word-wrap: break-word;
+}	
+div.head {
+	margin-top:3%;
+}	
+a {
+	color: #424242;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: bold;
+}
+a.bar {
+	font-size: 16pt;
+	padding:10px;
+}
+a.bar:hover {
+	font-weight: bold;
+}
+h1 {
+	font-size: 22pt;
+}
+.divNoSpace {
+	margin-top: 1%;
+}
+.divSpace {
+	margin-top: 2%;
+}
+.divFewSpace {
+	margin-top: 3%;
+}
+r {
+	float: right;
+}
+b {
+	font-weight: bold;
+}
+
+
+/*Lists (Credits, Scripts)*/
+.year {
+	background-color:rgba(190,190,190,0.2);
+	border-radius: 7px;
+	padding:13px;
+	font-size: 18pt;
+}
+.line {
+		margin-left:2.5%;
+		margin-right:2.5%;
+		line-height: 22pt;
+}
+.name {
+	font-size:14pt;
+	font-weight: bold;
+}
+.nameLink:hover {
+	text-decoration: underline;
+}
+
+
+/*Index*/
+#sixteennine {
+	height: 56.25%;
+}
+#twobyone {
+	height: 50%;
+}
+#exile {
+	height: 41.71%;
+}
+hr.end {
+	margin-bottom:3%;
+}
+div.title {
+	font-size: 18pt;
+}
+
+
+/*mobile and narrow sizes*/
+@media all and (max-aspect-ratio: 4/3) {
+	body {
+		margin-left:0%;
+		margin-right:0%;
+      	}
+	div.head {
+		margin-left:2.5%;
+	}
+}
+@media all and (max-aspect-ratio: 6/7) {
+	body {
+		font-size: 12pt;
+		line-height: 15pt;
+      	}
+	h1 {
+		font-size: 22pt;
+	}
+}
