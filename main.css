@@ -66,6 +66,8 @@ b {
 	font-weight: bold;
 }
 .nameLink:hover {
+	font-size:14pt;
+	font-weight: bold;
 	text-decoration: underline;
 }
 
