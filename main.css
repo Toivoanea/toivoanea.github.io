@@ -96,18 +96,14 @@ b {
 }
 @media all and (max-aspect-ratio: 1/1) {
 	body {
-		font-size: 18pt;
-		line-height: 20pt;
+		font-size: 20pt;
+		line-height: 22pt;
       	}
-	div.head, .year, div.text {
-		margin-left:2.5%;
-		margin-right:2.5%;
-	}
 	h1 {
-		font-size: 22pt;
+		font-size: 24pt;
 	}
 	.name, .nameLink, .year, a.bar {
-		font-size: 18pt;
+		font-size: 22pt;
 	}
 }
 
