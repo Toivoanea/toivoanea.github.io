@@ -7,7 +7,7 @@ body {
 	color: #424242;
     margin-left:25%;
 	margin-right:25%;
-	font-size: 12pt;
+	font-size: 13pt;
 	line-height: 15pt;
 	font-family: "Courier Prime", "Courier New", monospace;
     word-wrap: break-word;
@@ -109,3 +109,46 @@ div.title {
 		font-size: 22pt;
 	}
 }
+
+/*scripts*/
+ #script {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 615px;
+        font-size: 12pt;
+        line-height: 12pt;
+    }
+    
+    @media screen and (max-width: 615px) {
+        #script {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    
+    .bold_sluglines .Slugline { font-weight: bold; }
+    
+    .Action, .Slugline, .Shot, .Act, .Transition, .Text, .Character, .Paren, .Dialog {
+        white-space: pre-wrap;
+    }
+    
+    .Slugline, .Shot, .Act, .Transition, .Character  { text-transform: uppercase; }
+    .Act { text-align: center; text-decoration: underline; }
+    .Action, .Text, .Act, .Slugline, .Shot, .Transition { margin-top: 1em; max-width: 615px; width: 100%; }
+    .Character { margin-top: 1em; max-width: 385px; }
+    .Slugline, .Shot { margin-top: 2em; }
+    .Transition { text-align: right; }
+    .Paren { margin-left: 15%; max-width: 245px; }
+    .Dialog { max-width: 355px; }
+    .Character { margin-left: 34%; }
+    .Paren { margin-left: 23.5%; margin-right: 15%; }
+    .Dialog { margin-left: 17%; margin-right: 10%; }
+    .Clear { clear: both; }
+    .Dual { float: left; width: 48%; }
+    .Left { padding-right: 2%; }
+    .Right { padding-right: 2%; }
+    
+    .Dual .Character { margin-left: 0; text-align: center; }
+    .Dual .Paren { margin-left: 9%; margin-right: 9%; }
+    .Dual .Dialog { margin-left: 0; margin-right: 0; }
