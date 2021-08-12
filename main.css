@@ -1,7 +1,11 @@
-﻿@font-face { font-family: "Courier Prime"; src: url("https://writerduet.com/font/Courier_Prime.ttf");}
+@font-face { font-family: "Courier Prime"; src: url("https://writerduet.com/font/Courier_Prime.ttf");}
 @font-face { font-family: "Courier Prime"; src: url("https://writerduet.com/font/Courier_Prime_Bold.ttf"); font-weight: bold; }
+
+/*Yellow highlighting instead of blue*/
 ::-moz-selection { background: yellow; }
-::selection { background: yellow; }	 
+::selection { background: yellow; }
+
+/*Main Style*/
 body {
 	background: url("http://toivoanea.github.io/Background.jpg");
 	color: #424242;
@@ -11,35 +15,35 @@ body {
 	line-height: 15pt;
 	font-family: "Courier Prime", "Courier New", monospace;
     	word-wrap: break-word;
-}	
-div.head {
-	margin-top:3%;
-}	
-a {
-	color: #424242;
-	text-decoration: none;
 }
-a:hover {
-	text-decoration: bold;
-}
-a.bar {
-	font-size: 16pt;
-	padding:10px;
-}
-a.bar:hover {
-	font-weight: bold;
-}
-h1 {
-	font-size: 22pt;
-}
+
+/*Spacing Divs (I know that's a sin!)*/
 .divNoSpace {
 	margin-top: 1%;
 }
 .divSpace {
 	margin-top: 2%;
 }
-.divFewSpace {
+.divFewSpace, div.head {
 	margin-top: 3%;
+}
+
+/*Link styling*/
+a {
+	color: #424242;
+	text-decoration: none;
+}
+a.bar {
+	font-size: 16pt;
+	padding:10px;
+}
+a:hover, a.bar:hover {
+	font-weight: bold;
+}
+
+/*SFX*/
+h1 {
+	font-size: 22pt;
 }
 r {
 	float: right;
@@ -69,19 +73,6 @@ b {
 	text-decoration: underline;
 }
 
-
-/*Index*/
-#sixteennine {
-	height: 56.25%;
-}
-#twobyone {
-	height: 50%;
-}
-#exile {
-	height: 35%;
-}
-
-
 /*mobile and narrow sizes*/
 @media all and (max-aspect-ratio: 4/3) {
 	body {
@@ -95,7 +86,11 @@ b {
 	
 }
 @media all and (max-aspect-ratio: 1/1) {
-	body, .name, .nameLink, {
+	body {
+		font-size: 20pt;
+		line-height: 22pt;
+      	}
+	.name, .nameLink, {
 		font-size: 20pt;
 		line-height: 22pt;
       	}
