@@ -95,14 +95,14 @@ b {
 	
 }
 @media all and (max-aspect-ratio: 1/1) {
-	body {
+	body, .name, .nameLink, {
 		font-size: 20pt;
 		line-height: 22pt;
       	}
 	h1 {
 		font-size: 24pt;
 	}
-	.name, .nameLink, .year, a.bar {
+	.year, a.bar {
 		font-size: 22pt;
 	}
 }
