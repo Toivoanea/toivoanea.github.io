@@ -73,6 +73,11 @@ b {
 	text-decoration: underline;
 }
 
+/*Sixteen by Nine Video*/
+#sixteennine {
+	height: 56.25%;
+}
+
 /*mobile and narrow sizes*/
 @media all and (max-aspect-ratio: 4/3) {
 	body {
