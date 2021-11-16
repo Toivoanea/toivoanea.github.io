@@ -60,7 +60,7 @@ b {
 	padding:13px;
 	font-size: 18pt;
 }
-.line {
+.line, .lineL, .lineC, .lineCL, .lineG {
 	margin-left:2.5%;
 	margin-right:2.5%;
 	line-height: 22pt;
