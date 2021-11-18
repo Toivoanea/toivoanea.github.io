@@ -78,6 +78,38 @@ b {
 	height: 56.25%;
 }
 
+/*showcase */
+.slideshow-container {
+  position: relative;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #eeeeee;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.selector {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+}
+
+.active, .selector:hover {
+  font-weight: bold;
+}
+
 /*mobile and narrow sizes*/
 @media all and (max-aspect-ratio: 4/3) {
 	body {
