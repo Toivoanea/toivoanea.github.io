@@ -1,4 +1,4 @@
-﻿<html>
+<html>
 <head>
 <meta charset="UTF-8">
 <title>Home - Leon Springer</title>
@@ -22,7 +22,92 @@
 Gaffer and pastime Screenwriter<br></br>
 Brighton / London | 23 years old<br></br></div>
 <div class="divNoSpace"></div>
-													   
+			
+<div class="slideshow-container">
+	<div class="showcase">
+		<img src="https://i.ibb.co/WsFwJFY/1.png" style="width:100%"><div class="divNoSpace"></div>
+		<b>JAM</b> directed by Crystal Leaity <r>Gaffer</r>
+	</div>
+	
+	<div class="showcase">
+		<img src="https://i.ibb.co/6BD50mP/2.png" style="width:100%"><div class="divNoSpace"></div>
+		<b>What a Waste</b> directed by Ani Merakova <r>Gaffer</r>
+	</div>
+	
+	<div class="showcase">
+		<img src="https://i.ibb.co/RPYk3JF/3.png" style="width:100%"><div class="divNoSpace"></div>
+		<b>JAM</b> directed by Crystal Leaity <r>Gaffer</r>
+	</div>
+	
+	<div class="showcase">
+		<img src="https://i.ibb.co/zNmD7Pp/4.png" style="width:100%"><div class="divNoSpace"></div>
+		<b>JAM</b> directed by Crystal Leaity <r>Gaffer</r>
+	</div>
+	
+	<div class="showcase">
+		<img src="https://i.ibb.co/w0rcnkS/5.png" style="width:100%"><div class="divNoSpace"></div>
+		<b>Never Too Late</b> directed by Harv Frost <r>Director of Photography</r>
+	</div>
+	
+	<div class="showcase">
+		<img src="https://i.ibb.co/SJBnF4C/6.png" style="width:100%"><div class="divNoSpace"></div>
+		<b>What a Waste</b> directed by Ani Merakova <r>Gaffer</r>
+	</div>
+	
+	<div class="showcase">
+		<img src="https://i.ibb.co/PGr2DTL/7.png" style="width:100%"><div class="divNoSpace"></div>
+		<b>What a Waste</b> directed by Ani Merakova <r>Gaffer</r>
+	</div>
+	
+	<div class="showcase">
+		<img src="https://i.ibb.co/Xk827NK/8.png" style="width:100%"><div class="divNoSpace"></div>
+		<b>Never Too Late</b> directed by Harv Frost <r>Director of Photography</r>
+	</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="selector" onclick="currentSlide(1)">1</span> 
+  <span class="selector" onclick="currentSlide(2)">2</span> 
+  <span class="selector" onclick="currentSlide(3)">3</span> 
+  <span class="selector" onclick="currentSlide(4)">4</span> 
+  <span class="selector" onclick="currentSlide(5)">5</span> 
+  <span class="selector" onclick="currentSlide(6)">6</span> 
+  <span class="selector" onclick="currentSlide(7)">7</span> 
+  <span class="selector" onclick="currentSlide(8)">8</span> 
+</div>			
 
 <div class="divFewSpace"></div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("showcase");
+  var dots = document.getElementsByClassName("selector");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
 </body></html>
