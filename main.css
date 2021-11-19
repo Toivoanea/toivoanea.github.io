@@ -1,6 +1,6 @@
 /*@font-face { font-family: "Courier Prime"; src: url("https://writerduet.com/font/Courier_Prime.ttf");}
 @font-face { font-family: "Courier Prime"; src: url("https://writerduet.com/font/Courier_Prime_Bold.ttf"); font-weight: bold; }*/
-@font-face { font-family: "Courier New"; src: url("https://writerduet.com/font/Courier_Prime.ttf");}
+@font-face { font-family: "Courier New"; src: url("https://leonspringer.com/courierNew.ttf");}
 
 /*Yellow highlighting instead of blue*/
 ::-moz-selection { background: yellow; }
