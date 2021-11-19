@@ -15,7 +15,7 @@ body {
 	font-size: 13pt;
 	line-height: 15pt;
 	/*font-family: "Courier Prime", "Courier New", monospace;*/
-	font-family: "Courier New";
+	font-family: "Courier New", monospace;
     	word-wrap: break-word;
 }
 
