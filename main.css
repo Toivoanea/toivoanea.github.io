@@ -73,6 +73,16 @@ b {
 	text-decoration: underline;
 }
 
+/*Dropdowns*/
+details[Open] {
+	background-color: rgba(190,190,190,0.2);
+	border-radius: 7px;
+}
+summary {
+      display: block;
+      cursor:pointer;
+}
+
 /*Sixteen by Nine Video*/
 #sixteennine {
 	height: 56.25%;
