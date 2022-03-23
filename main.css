@@ -62,7 +62,7 @@ in {
 	padding:13px;
 	font-size: 18pt;
 }
-.line, .lineL, .lineC, .lineCL, .lineG .lineF .lineFG .lineFL{
+.line, .lineL, .lineC, .lineCL, .lineG, .lineF, .lineFG, .lineFL {
 	margin-left:2.5%;
 	margin-right:2.5%;
 	line-height: 22pt;
