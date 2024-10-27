@@ -62,7 +62,7 @@ in {
 	padding:13px;
 	font-size: 18pt;
 }
-.line, .lineL, .lineC, .lineCL, .lineG, .lineF, .lineFG, .lineFL, .lineFC {
+.line, .lineL, .lineC, .lineCL, .lineCG, .lineG, .lineF, .lineFG, .lineFL, .lineFC {
 	margin-left:2.5%;
 	margin-right:2.5%;
 	line-height: 22pt;
@@ -171,28 +171,3 @@ summary {
 div.page_num {
 	float: right;	
 }
-
-.Action, .Slugline, .Shot, .Act, .Transition, .Text, .Character, .Paren, .Dialog {
-	white-space: pre-wrap;
-}
-   
-.Slugline, .Shot, .Act, .Transition, .Character  { text-transform: uppercase; }
-.Slugline { font-weight: bold; }
-.Act { text-align: center; text-decoration: underline; }
-.Action, .Text, .Act, .Slugline, .Shot, .Transition { margin-top: 1em; max-width: 615px; width: 100%; }
-.Character { margin-top: 1em; max-width: 385px; }
-.Slugline, .Shot { margin-top: 2em; }
-.Transition { text-align: right; }
-.Paren { margin-left: 15%; max-width: 245px; }
-.Dialog { max-width: 355px; }
-.Character { margin-left: 34%; }
-.Paren { margin-left: 23.5%; margin-right: 15%; }
-.Dialog { margin-left: 17%; margin-right: 10%; }
-.Clear { clear: both; }
-.Dual { float: left; width: 48%; }
-.Left { padding-right: 2%; }
-.Right { padding-right: 2%; }
-    
-.Dual .Character { margin-left: 0; text-align: center; }
-.Dual .Paren { margin-left: 9%; margin-right: 9%; }
-.Dual .Dialog { margin-left: 0; margin-right: 0; }
