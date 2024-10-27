@@ -132,7 +132,9 @@ summary {
 		margin-left:2.5%;
 		margin-right:2.5%;
 	}
-	
+	.line, .lineL, .lineC, .lineCL, .lineCG, .lineG, .lineF, .lineFG, .lineFL, .lineFC {
+		font-size:14pt;
+	}
 }
 /*
 @media all and (max-aspect-ratio: 1/1) {
