@@ -134,6 +134,7 @@ summary {
 	}
 	
 }
+/*
 @media all and (max-aspect-ratio: 1/1) {
 	body {
 		font-size: 20pt;
@@ -150,24 +151,4 @@ summary {
 		font-size: 22pt;
 	}
 }
-
-/*scripts*/
- #script {
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        max-width: 615px;
-        font-size: 12pt;
-        line-height: 12pt;
-    }
-    
-    @media screen and (max-width: 615px) {
-        #script {
-            margin-left: 0;
-            margin-right: 0;
-        }
-    }
-
-div.page_num {
-	float: right;	
-}
+*/
