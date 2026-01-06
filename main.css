@@ -9,12 +9,12 @@
 body {
 	background: url("http://toivoanea.github.io/Background.jpg");
 	color: #424242;
-    	margin-left:25%;
-	margin-right:25%;
+    margin-left:23%;
+	margin-right:23%;
 	font-size: 13pt;
 	line-height: 15pt;
 	font-family: "Roboto-Light", monospace;
-    	word-wrap: break-word;
+    word-wrap: break-word;
 }
 
 /*Spacing Divs (I know that's a sin!)*/
@@ -24,10 +24,16 @@ body {
 .divSpace {
 	margin-top: 2%;
 }
-.divFewSpace, div.head {
+.divFewSpace {
 	margin-top: 3%;
 }
 
+div.head {
+	background-color:rgba(190,190,190,0.2);
+	border-radius: 7px;
+	padding:13px;
+}
+	
 /*Link styling*/
 a {
 	color: inherit;
@@ -137,21 +143,3 @@ summary {
 		font-size:14pt;
 	}
 }
-/*
-@media all and (max-aspect-ratio: 1/1) {
-	body {
-		font-size: 20pt;
-		line-height: 22pt;
-      	}
-	.name, .nameLink, {
-		font-size: 20pt;
-		line-height: 22pt;
-      	}
-	h1 {
-		font-size: 24pt;
-	}
-	.year, a.bar {
-		font-size: 22pt;
-	}
-}
-*/
