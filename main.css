@@ -27,8 +27,12 @@ body {
 .divFewSpace {
 	margin-top: 3%;
 }
-
-div.head {
+div.navBar {
+	background-color:rgba(190,190,190,0.2);
+	border-radius: 7px;
+	padding:13px;
+}
+div.header {
 	background-color:rgba(190,190,190,0.2);
 	border-radius: 7px;
 	padding:13px;
