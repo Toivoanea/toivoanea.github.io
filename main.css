@@ -1,4 +1,5 @@
-@font-face { font-family: "Courier New"; src: url("https://leonspringer.com/courierNew.ttf");}
+@font-face { font-family: "Courier New"; src: url("https://neaspringer.com/courierNew.ttf");}
+@font-face { font-family: "Roboto-Light"; src: url("https://neaspringer.com/Roboto-Light.ttf");}
 
 /*Yellow highlighting instead of blue*/
 ::-moz-selection { background: yellow; }
@@ -12,7 +13,7 @@ body {
 	margin-right:25%;
 	font-size: 13pt;
 	line-height: 15pt;
-	font-family: "Courier New", monospace;
+	font-family: "Roboto-Light", monospace;
     	word-wrap: break-word;
 }
 
