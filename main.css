@@ -144,4 +144,8 @@ summary {
 	.line, .lineL, .lineC, .lineCL, .lineCG, .lineG, .lineF, .lineFG, .lineFL, .lineFC {
 		font-size:14pt;
 	}
+	r {
+		break-before: always;
+		float: none;
+	}
 }
