@@ -145,7 +145,7 @@ summary {
 		font-size:14pt;
 	}
 	r {
-		break-before: always;
+		display: block;
 		float: none;
 	}
 }
