@@ -62,6 +62,9 @@ b {
 in {
 	margin-left:3.5%;
 }
+g {
+	/*Placeholder*/
+}
 
 
 /*Lists (Credits, Scripts)*/
@@ -70,6 +73,7 @@ in {
 	border-radius: 7px;
 	padding:13px;
 	font-size: 18pt;
+	text-align: center;
 }
 .line, .lineL, .lineC, .lineCL, .lineCG, .lineG, .lineF, .lineFG, .lineFL, .lineFC {
 	margin-left:2.5%;
@@ -136,16 +140,36 @@ summary {
 	body {
 		margin-left:0%;
 		margin-right:0%;
+		font-size: 3vw;
       	}
+	h1 {
+		font-size: 4vw;
+	}
 	div.head, .year, .text {
 		margin-left:2.5%;
 		margin-right:2.5%;
 	}
-	.line, .lineL, .lineC, .lineCL, .lineCG, .lineG, .lineF, .lineFG, .lineFL, .lineFC {
-		font-size:14pt;
+	div.head {
+		padding:0%;
+		margin-bottom: 5%;
 	}
-	r {
+	.name, .nameLink {
+		font-size:3.2vw;
+	}
+	.line, .lineL, .lineC, .lineCL, .lineCG, .lineG, .lineF, .lineFG, .lineFL, .lineFC {
+		font-size:3vw;
+		line-height: 3.4vw;
+		margin-bottom: 1.5vw;
+	}
+	/*Sending the Subheadings to the next line*/
+	g {
 		display: block;
-		float: none;
+	}
+	/*Upscaling the Nav Bar*/
+	a.bar {
+		font-size: 3.8vw;
+	}
+	img.social {
+		width: 3.8vw;
 	}
 }
