@@ -141,6 +141,7 @@ summary {
 		margin-left:0%;
 		margin-right:0%;
 		font-size: 3vw;
+		line-height: 3.4vw;
       	}
 	h1 {
 		font-size: 4vw;
@@ -148,6 +149,9 @@ summary {
 	div.head, .year, .text {
 		margin-left:2.5%;
 		margin-right:2.5%;
+	}
+	div.year {
+		font-size: 3.8vw;
 	}
 	div.head {
 		padding:0%;
