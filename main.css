@@ -17,10 +17,6 @@ body {
     word-wrap: break-word;
 }
 
-.text {
-		padding:13px;
-}
-
 /*Spacing Divs (I know that's a sin!)*/
 .divNoSpace {
 	margin-top: 1%;
@@ -192,9 +188,6 @@ summary {
       	}
 	h1 {
 		font-size: 4vw;
-	}
-	.text {
-		padding:0px;
 	}
 	div.head, .year, .text {
 		margin-left:2.5%;
