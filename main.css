@@ -193,6 +193,9 @@ summary {
 	h1 {
 		font-size: 4vw;
 	}
+	.text {
+		padding:0px;
+	}
 	div.head, .year, .text {
 		margin-left:2.5%;
 		margin-right:2.5%;
