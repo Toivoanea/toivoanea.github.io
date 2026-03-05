@@ -18,8 +18,7 @@ body {
 }
 
 .text {
-		margin-left:2.5%;
-		margin-right:2.5%;
+		padding:13px;
 }
 
 /*Spacing Divs (I know that's a sin!)*/
@@ -194,7 +193,7 @@ summary {
 	h1 {
 		font-size: 4vw;
 	}
-	div.head, .year {
+	div.head, .year, .text {
 		margin-left:2.5%;
 		margin-right:2.5%;
 	}
