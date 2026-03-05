@@ -17,6 +17,11 @@ body {
     word-wrap: break-word;
 }
 
+.text {
+		margin-left:2.5%;
+		margin-right:2.5%;
+}
+
 /*Spacing Divs (I know that's a sin!)*/
 .divNoSpace {
 	margin-top: 1%;
@@ -64,6 +69,49 @@ in {
 }
 g {
 	/*Placeholder*/
+}
+
+/*Highlight Pages*/
+.imageRoster {
+  display: grid;
+  grid-template-columns: repeat(10, [col-start] 1fr);
+  gap: 0px;
+}
+.imageRoster > * {
+  grid-column: col-start / span 12;
+}
+img.thumb {
+  width: 100%;
+}
+@media screen and (orientation:portrait) {
+   /* Portrait styles here */
+   .mainImg {
+     width: 0%;
+  }
+}
+@media screen and (orientation:landscape) {
+  .mainImg {
+    grid-column: col-start / span 8;
+    grid-row: 1 / 9;
+    margin: auto;
+  }
+  .img0 {
+    grid-column: col-start 9 / span 4;
+    grid-row: 1 / 3;
+    display:block;
+  }
+  .img1 {
+    grid-column: col-start 9 / span 4;
+    grid-row: 3 / 5;
+  }
+  .img2 {
+    grid-column: col-start 9 / span 4;
+    grid-row: 5 / 7;
+  }
+  .img3 {
+    grid-column: col-start 9 / span 4;
+    grid-row: 7 / 9;
+  }
 }
 
 
@@ -146,7 +194,7 @@ summary {
 	h1 {
 		font-size: 4vw;
 	}
-	div.head, .year, .text {
+	div.head, .year {
 		margin-left:2.5%;
 		margin-right:2.5%;
 	}
