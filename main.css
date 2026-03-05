@@ -68,15 +68,16 @@ g {
 
 /*Highlight Pages*/
 .imageRoster {
-  display: grid;
-  grid-template-columns: repeat(10, [col-start] 1fr);
-  gap: 0px;
+	display: grid;
+	grid-template-columns: repeat(10, [col-start] 1fr);
+	gap: 0px;
 }
 .imageRoster > * {
-  grid-column: col-start / span 12;
+	grid-column: col-start / span 12;
 }
 img.thumb {
-  width: 100%;
+	width: 100%;
+	cursor: pointer;
 }
 @media screen and (orientation:portrait) {
    /* Portrait styles here */
