@@ -1,5 +1,5 @@
-@font-face { font-family: "Courier New"; src: url("https://LinneaJohanna.com/courierNew.ttf");}
-@font-face { font-family: "Roboto-Light"; src: url("https://LinneaJohanna.com/Roboto-Light.ttf");}
+@font-face { font-family: "Courier New"; src: url("./courierNew.ttf");}
+@font-face { font-family: "Roboto-Light"; src: url("./Roboto-Light.ttf");}
 
 /*Yellow highlighting instead of blue*/
 ::-moz-selection { background: yellow; }
