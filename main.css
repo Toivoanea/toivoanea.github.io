@@ -197,7 +197,7 @@ summary {
 	div.year {
 		font-size: 3.8vw;
 	}
-	div.head {
+	div.head, .text {
 		padding:0%;
 		margin-bottom: 5%;
 	}
