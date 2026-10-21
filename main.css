@@ -7,7 +7,7 @@
 
 /*Main Style*/
 body {
-	background: url("LinneaJohanna.com/Background.jpg");
+	background: url("./n/background.jpg");
 	color: #424242;
     margin-left:23%;
 	margin-right:23%;
@@ -32,7 +32,7 @@ div.navBar {
 	border-radius: 7px;
 	padding:13px;
 }
-div.head {
+div.head, .text {
 	padding:13px;
 }
 	
