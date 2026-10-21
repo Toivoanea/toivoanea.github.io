@@ -154,9 +154,8 @@ summary {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  /*top: 50%;*/
-  text-align: center;
-  width: 5%;
+  top: 50%;
+  width: auto;
   padding: 16px;
   margin-top: -22px;
   color: #eeeeee;
