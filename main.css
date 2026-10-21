@@ -1,5 +1,5 @@
-@font-face { font-family: "Courier New"; src: url("https://neaspringer.com/courierNew.ttf");}
-@font-face { font-family: "Roboto-Light"; src: url("https://neaspringer.com/Roboto-Light.ttf");}
+@font-face { font-family: "Courier New"; src: url("https://LinneaJohanna.com/courierNew.ttf");}
+@font-face { font-family: "Roboto-Light"; src: url("https://LinneaJohanna.com/Roboto-Light.ttf");}
 
 /*Yellow highlighting instead of blue*/
 ::-moz-selection { background: yellow; }
@@ -7,7 +7,7 @@
 
 /*Main Style*/
 body {
-	background: url("http://toivoanea.github.io/Background.jpg");
+	background: url("LinneaJohanna.com/Background.jpg");
 	color: #424242;
     margin-left:23%;
 	margin-right:23%;
