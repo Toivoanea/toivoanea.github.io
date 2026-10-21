@@ -154,11 +154,13 @@ summary {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
-  width: auto;
+  /*top: 50%;*/
+  text-align: center;
+  width: 5%;
   padding: 16px;
   margin-top: -22px;
-  color: #dddddd;
+  color: #eeeeee;
+  opacity: 0.8;
   font-weight: bold;
   font-size: 18px;
   border-radius: 0 3px 3px 0;
